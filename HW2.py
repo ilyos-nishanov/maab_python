@@ -22,11 +22,14 @@ print(txt[1::2])
 #   - Extract car names from this text:
 txt = 'MsaatmiazD'
 print(txt[0::2])
+print(txt[-1::-2])
 
 #4. **Extract Residence Area**
 # - Extract the residence area from this text:
 txt = "I'am John. I am from London"
 print(txt[-6:])
+print(txt[len(txt)-6:])
+
 
 ## Optional (For Wonderkids)
 
@@ -46,9 +49,9 @@ print(f"number of vowels here is {vowels_count}")
 
 #3. **Sum of Digits**
 #   - Create a program that takes an integer input from the user and calculates the sum of its digits.
-num = int(input("enter your number: "))
+num = input("enter your number: ")
 sum = 0
-for digit in str(num):
+for digit in num:
         sum += int(digit)
 print(f"sum of your digits is: {sum}")
 
