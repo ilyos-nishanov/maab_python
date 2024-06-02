@@ -1,3 +1,35 @@
+# first lets initialize our 'tables' as dictionaries
+
+subjects = {
+  1: "Math", 
+  2: "IT", 
+  3: "History"
+  }
+
+students= {
+  1: {
+    "name": "John",
+    "subjects": subjects
+  },
+  2: {
+    "name": "Jack",
+    "subjects": subjects
+  }
+}
+
+grades = {
+  1: {
+    1: 5,
+    2: 4,
+    3: 4
+  },
+  2: {
+    1: 5,
+    2: 5,
+    3: 4
+  },
+}
+
 #
 while True:
   command = input("MENU:\n\t1. Student List\n\t2. Subjects list\n\t3. Grades by ID\n\t4. Exit\n")
